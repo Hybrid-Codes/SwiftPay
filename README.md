@@ -1,4 +1,5 @@
 # SwiftPay
+An internal international payment system that allows customers to register for the system that is then secured allowing for payments choosing a provided making use of SWIFT.
 
 ## Git
 
