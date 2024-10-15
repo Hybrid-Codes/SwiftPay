@@ -1,5 +1,6 @@
 import https from "https";
 import fs from "fs";
+import posts from "./routes/post.mjs";
 import fruits from "./routes/fruit.mjs";
 import express from "express";
 import cors from "cors";
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 
 // Use the fruits router
 app.use("/fruit", fruits);
+app.use("/post", posts);
 
 // Create HTTPS server
 let server = https.createServer(options, app);
